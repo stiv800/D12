@@ -1,0 +1,8 @@
+{% extends "flatpages/default.html" %}
+ 
+{% load cache %}
+{% cache 300 limit %} 
+    {% block content %}
+    <h3>Ваш лимит на количество статей в сутки (3) исчерпан.</h3>
+    {% endblock content %}
+{% endcache %}
